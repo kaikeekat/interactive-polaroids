@@ -12,14 +12,8 @@ html {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
-}
-
-.polaroid > img {
-  display: block;
-  width: 100%;
-}
-
-.polaroid > figcaption {
-  color: #fff;
-  text-shadow: 1px 1px 3px #000;
+  position: absolute;
+  transition: all 200ms linear;
+  text-align: center;
+  display: inline-block;
 }
