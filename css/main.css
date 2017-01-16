@@ -17,3 +17,44 @@ html {
   text-align: center;
   display: inline-block;
 }
+
+.polaroid > img {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+.polaroid > figcaption {
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-150%);
+}
+
+figure:nth-child(1) {
+  transform: rotate(-12deg);
+  left: 20%;
+  top: 100px;
+  z-index: 2;
+}
+
+figure:nth-child(2) {
+  transform: rotate(5deg);
+  left: 30%;
+  top: 150px;
+  z-index: 4;
+}
+
+figure:nth-child(3) {
+  transform: rotate(33deg);
+  left: 40%;
+  top: 100px;
+  z-index: 3;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg);
+  box-shadow: 2px 5px 7px 5px rgba(0, 0, 0, .5);
+  z-index: 1;
+}
